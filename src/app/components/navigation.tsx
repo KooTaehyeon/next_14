@@ -10,14 +10,10 @@ const Navigation = () => {
     <nav>
       <ul>
         <li>
-          <Link href={'/'}>
-            {path === '/' ? '🔥' : ''}
-            home
-          </Link>
+          <Link href={'/'}>home {path === '/' ? '🔥' : ''}</Link>
         </li>
         <li>
           <Link href={'/about-ko'}>
-            {' '}
             {path === '/about-ko' ? '🔥' : ''}About Ko
           </Link>
         </li>
